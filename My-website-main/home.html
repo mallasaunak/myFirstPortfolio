@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Using meta tag-->
+    <meta charset="UTF-8">
+    <meta name="Saunak_Malla" content="Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linking external css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css" >
+    <!--Linking external js-->
+    <script src="js/wellcome.js"></script>
+
+    <title>iBlog</title>
+</head>
+
+<body style="text-align: center; color:white; ">
+
+    <!-- Navigation bar-->
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <!--Linking inline css-->
+            <span style="padding-right: -1px;padding-top: 24px;font-size: 28px;line-height: 0.8;letter-spacing: 0.165em;font-weight: 500;">SAUNAK MALLA</span>
+            <ul>
+                <li><a href="#home.html">Home</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nev-right">
+            <form action="search.html"></form>
+            <input class="font-input" type="text" placeholder="Search">
+            <button class="btn">Search</button>
+        </div>
+
+    </nav>
+    <hr>
+    <!-- Landing Screen -->
+    <div>
+        <section id="welcome-section">
+
+            <h1>Hello, I'm Saunak Malla</h1>
+            <p>Student of Islington | BSC Computing</p>
+        </section>
+    </div>
+    <u>
+    <!--Assigning id and social media icons-->
+    <section id="contacts">
+        <h5>Contact</h5>
+        <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Add font awesome icons -->
+<div class="contact-link">
+<a href="https://www.facebook.com/saunak.malla.33/" class="fa fa-facebook" target="_blank"></a>
+<a href="https://twitter.com/SaunakMalla?s=07" class="fa fa-twitter" target="_blank"></a>
+<a href="https://www.linkedin.com/in/mr-leo-89168a1bb" class="fa fa-linkedin-square" target="_blank"></a>
+<a href="https://www.instagram.com/saunak_malla/" class="fa fa-instagram" target="_blank"></a>
+<div id="clock">
+	<div id="time">
+		<div><span id="hour">00</span><span>Hours</span></div>
+		<div><span id="minutes">00</span><span>Minutes</span></div>
+		<div><span id="seconds">00</span><span>Seconds</span></div>
+	</div>
+</div>
+</div>
+<!--Linking internal js for Time-->
+<div class="clock"></div>
+<script type="text/javascript">
+	function clock(){
+		var hour = document.getElementById('hour');
+		var minutes = document.getElementById('minutes');
+		var seconds = document.getElementById('seconds');
+		var h = new Date().getHours();
+		var m = new Date().getMinutes();
+		var s = new Date().getSeconds();
+
+		hour.innerHTML = h;
+		minutes.innerHTML = m;
+		seconds.innerHTML = s;
+	}
+	var interval = setInterval(clock, 1000);
+</script>
+
+</div>       
+    </section>
+    </u>
+    <!-- FOOTER -->
+    <footer>
+        <center> A project by<a style=" text-decoration: none; color: #F55892;" target="_blank">
+  &copy ISLINGTON </a> & developed by <a style="text-decoration: none; color: #F55892;" target="_blank">SAUNAK MALLA</a></center>
+    </footer>
+
+</body>
+
+</html>
